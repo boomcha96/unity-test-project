@@ -14,35 +14,12 @@ public class EnemyData : MonoBehaviour
         enemyStats = EnemyStats.CreateFromJSON(json);
     }
 
-    //public Enemy EnemyDataLoad()
-    //{
-    //    enemy.speed = Random.Range(enemyStats.speed_min, enemyStats.speed_max);
-    //    enemy.radius = Random.Range(enemyStats.radius_min, enemyStats.radius_max);
-    //    enemy.waitTime = Random.Range(enemyStats.waitTime_min, enemyStats.waitTime_max);
-    //    enemy.luck = Random.Range(enemyStats.luck_min, enemyStats.luck_max);
-    //    return enemy;
-    //    //return new Enemy
-    //    //{
-    //    //    speed = Random.Range(enemyStats.speed_min, enemyStats.speed_max),
-    //    //    radius = Random.Range(enemyStats.radius_min, enemyStats.radius_max),
-    //    //    waitTime = Random.Range(enemyStats.waitTime_min, enemyStats.waitTime_max),
-    //    //    luck = Random.Range(enemyStats.luck_min, enemyStats.luck_max)
-    //    //};
-    //}
-
     public void EnemyDataLoad(ref float speed, ref float radius, ref float waitTime, ref float luck)
     {
         speed = Random.Range(enemyStats.speed_min, enemyStats.speed_max);
         radius = Random.Range(enemyStats.radius_min, enemyStats.radius_max);
         waitTime = Random.Range(enemyStats.waitTime_min, enemyStats.waitTime_max);
         luck = Random.Range(enemyStats.luck_min, enemyStats.luck_max);
-        //return new Enemy
-        //{
-        //    speed = Random.Range(enemyStats.speed_min, enemyStats.speed_max),
-        //    radius = Random.Range(enemyStats.radius_min, enemyStats.radius_max),
-        //    waitTime = Random.Range(enemyStats.waitTime_min, enemyStats.waitTime_max),
-        //    luck = Random.Range(enemyStats.luck_min, enemyStats.luck_max)
-        //};
     }
 
     [System.Serializable]
