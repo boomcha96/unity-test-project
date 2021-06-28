@@ -1,0 +1,10 @@
+{
+	"speed_min":1, 
+	"speed_max":3,
+	"radius_min":3, 
+	"radius_max":15,
+	"waitTime_min":1, 
+	"waitTime_max":5,
+	"luck_min":5, 
+	"luck_max":10
+}
